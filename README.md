@@ -4,17 +4,17 @@ This skeleton contains a Nginx web server, PHP 7.4, composer and PHPUnit.
 
 ## Composer
 ```sh
-docker-compose run composer
+$ docker-compose run composer
 ```
 
 ## PHPUnit
 ```sh
-docker-compose run phpunit
+$ docker-compose run phpunit
 ```
 
 ## WebServer
 ```sh
-docker-compose up -d nginx
+$ docker-compose up -d nginx
 ```
 The webserver runs on `http://localhost:8080`
 
@@ -24,7 +24,10 @@ To simplify the commands, you can add a alias on your terminal, like this:
 alias dcr='docker-compose run'
 ```
 If you use this alias, you run `drc` instead `docker-compose run`
+
 Example:
 ```sh
-dcr phpunit
+$ dcr phpunit
 ```
+
+_Special thank's to https://thephp.website for the tutorial!_
